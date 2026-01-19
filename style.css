@@ -62,3 +62,36 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+
+.table-card {
+  width: 70%;
+  background-color: #ecfeff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table-card h2 {
+  color: #0e7490;
+  margin-bottom: 15px;
+}
+
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #0e7490;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #67e8f9;
+  text-align: center;
+}
