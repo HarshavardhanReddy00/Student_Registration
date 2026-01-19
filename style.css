@@ -35,13 +35,13 @@ body {
 
 .form-card {
   width: 30%;
-  background-color: #fef3c7;
+  background-color: rgb(254, 243, 199);
   padding: 20px;
   border-radius: 10px;
 }
 
 .form-card h2 {
-  color: #92400e;
+  color: rgb(146, 64, 14);
   margin-bottom: 15px;
 }
 
@@ -49,14 +49,14 @@ body {
   width: 100%;
   padding: 10px;
   margin-bottom: 12px;
-  border: 1px solid #d97706;
+  border: 1px solid rgb(217, 119, 6);
   border-radius: 6px;
 }
 
 .form-card button {
   width: 100%;
   padding: 10px;
-  background-color: #92400e;
+  background-color: rgb(146, 64, 14);
   color: white;
   border: none;
   border-radius: 6px;
@@ -65,13 +65,13 @@ body {
 
 .table-card {
   width: 70%;
-  background-color: #ecfeff;
+  background-color: rgb(236, 254, 255);
   padding: 20px;
   border-radius: 10px;
 }
 
 .table-card h2 {
-  color: #0e7490;
+  color: rgb(14, 116, 144);
   margin-bottom: 15px;
 }
 
@@ -86,12 +86,42 @@ table {
 }
 
 th {
-  background-color: #0e7490;
+  background-color: rgb(14, 116, 144);
   color: white;
 }
 
 td, th {
   padding: 10px;
-  border: 1px solid #67e8f9;
+  border: 1px solid rgb(103, 232, 249);
   text-align: center;
+}
+
+.edit-btn {
+  background-color: rgb(22, 163, 74);
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: rgb(220, 38, 38);
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .form-card,
+  .table-card {
+    width: 100%;
+  }
 }
