@@ -10,3 +10,55 @@ body {
   min-height: 100vh;
   color: rgb(34, 34, 34);
 }
+
+.main-header {
+  text-align: center;
+  padding: 25px;
+  background-color: rgb(15, 23, 42);
+  color: rgb(248, 250, 252);
+}
+
+.main-header h1 {
+  font-weight: 600;
+}
+
+.main-header p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.main-container {
+  display: flex;
+  gap: 25px;
+  padding: 25px;
+}
+
+.form-card {
+  width: 30%;
+  background-color: #fef3c7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-card h2 {
+  color: #92400e;
+  margin-bottom: 15px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #d97706;
+  border-radius: 6px;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #92400e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
