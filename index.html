@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration System</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration System</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="main-header">
-        <h1>Student Registration System</h1>
-    </header>
-
-    <main class="main-container">
-
-        <section class="form-card">
-            <h2>Registered Students</h2>
-
-            <form id="registrationForm">
-                <input type="text" id="studentName" placeholder="Student Name">
-                <input type="number" id="studentId" placeholder="Student Id">
-                <input type="email" id="studentEmail" placeholder="Email Address">
-                <input type="number" id="studentNumber" placeholder="Contact Number">
-            </form>
-        </section>
-    </main>
+  
+  <header class="main-header">
+    <h1>Student Registration System</h1>
+    <p>Manage student records efficiently with add, edit, and delete options</p>
+  </header>
+  
+  <main class="main-container">
     
+    <section class="form-card">
+      <h2>Register Student</h2>
+
+      <form id="registrationForm">
+        <input type="text" id="studentName" placeholder="Student Name" />
+        <input type="number" id="studentId" placeholder="Student ID" />
+        <input type="email" id="studentEmail" placeholder="Email Address" />
+        <input type="number" id="studentContact" placeholder="Contact Number" />
+
+        <button type="submit">Save Student</button>
+      </form>
+    </section>
+
+    
+    <section class="table-card">
+      <h2>Registered Students</h2>
+
+      <div class="table-container" id="tableContainer">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="studentTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
